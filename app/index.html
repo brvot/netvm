@@ -214,14 +214,9 @@
         //     }
         // });
 
-        fetch(endpoint + "/projecao-ams", {
-        method: 'GET',
-        headers: {
-            'Accept': 'application/json',
-        },
-        })
-        .then(response => response.json())
-        .then(response => console.log(JSON.stringify(response)));
+        $.getJSON(endpoint + "/projecao-ams?callback=?",function(json){
+            console.log(json);
+        });
     </script>
 
   </body>
