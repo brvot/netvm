@@ -194,6 +194,7 @@
 
         $.ajax({
             type: "GET", url: endpoint + "/projecao-ams",
+            headers: { 'Access-Control-Allow-Origin': '*' },
             data: {
                 "Planta": "4069", "GA": "GER. LOCOMOTIVA", "Ativo": "%-POR%", "Tipo OM": "YPM"
             },
