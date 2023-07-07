@@ -194,7 +194,10 @@
 
         $.ajax({
             type: "GET", url: endpoint + "/projecao-ams",
-            crossDomain: true,
+            headers: {
+                "Accept":"application/json",
+                "Authorization":"foi"
+            },
             data: {
                 "Planta": "4069", "GA": "GER. LOCOMOTIVA", "Ativo": "%-POR%", "Tipo OM": "YPM"
             },
