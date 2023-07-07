@@ -231,5 +231,20 @@
         </div>
       </div>
     </div>
+
+    <script>
+
+        var endpoint = "http://efvmonline:88/app/netvm/api/dep/manutencao-industrial/";
+
+        $.ajax({
+            type: "GET",
+            dataType: 'json',
+            url: "projecao-ams",
+            data: {
+                "Planta": "4069"
+            }
+        });
+    </script>
+
   </body>
 </html>
